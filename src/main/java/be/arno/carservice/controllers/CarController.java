@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/cars", produces = APPLICATION_JSON_UTF8_VALUE)
 public class CarController {
 
-  @GetMapping
-  public String test() {
-    return "Car-Service";
+  @GetMapping(value = "/hello")
+  public String helloFromCarService() {
+    return "Hello from Car-Service";
   }
 
 }
